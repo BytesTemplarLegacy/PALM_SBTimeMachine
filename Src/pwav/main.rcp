@@ -1,0 +1,50 @@
+#include "main_rsrc.h"
+
+FORM ID MainForm AT (2 2 156 156)
+NOFRAME                                                                         
+USABLE                                                                          
+MENUID MainMenuBar
+BEGIN
+   TITLE "PWav"
+   BUTTON "Play Wav !" ID MainButtonButton AT (7 140 AUTO AUTO)
+END
+
+VERSION "1.0"
+ICON "icon.pbitm"
+SMALLICON "smallicon.pbitm"
+
+MENU ID MainMenuBar
+BEGIN
+   PULLDOWN "Edit"
+   BEGIN
+      MENUITEM "Undo" ID EditUndo "U"
+      MENUITEM "Cut" ID EditCut "X"
+      MENUITEM "Copy" ID EditCopy "C"
+      MENUITEM "Paste" ID EditPaste "P"
+      MENUITEM "Select All" ID EditSelectAll "S"
+      MENUITEM "-" AUTOID
+      MENUITEM "Keyboard" ID EditKeyboard "K"
+      MENUITEM "Grafitti " ID EditGrafitti "G"
+   END
+   
+   PULLDOWN "Options"
+   BEGIN
+      MENUITEM "About ..." ID OptionsAbout
+   END
+END
+
+ALERT ID MainAlert                                                          
+INFORMATION                                                                     
+BEGIN                                                                           
+  TITLE "An Alert"                                                         
+  MESSAGE "Hello !"                                  
+  BUTTONS "Done"                                                                
+END                                                                             
+
+ALERT ID AboutBoxAlert                                                          
+INFORMATION                                                                     
+BEGIN                                                                           
+  TITLE "About"                                                         
+  MESSAGE "PWav 0.2"
+  BUTTONS "OK"                                                                
+END                                                                             
