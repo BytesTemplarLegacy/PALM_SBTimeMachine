@@ -11,3 +11,5 @@ There's a couple built binaries, though, if you're brave.  (I'm not.)
 Enjoy!
 
 -- TD (2014-11)
+
+EDIT: By the way, the code (as little as there is) is free, but I can't claim any rights to the audio portion. That's straight up Chaps.
